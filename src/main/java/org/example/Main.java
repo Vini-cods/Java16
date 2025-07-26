@@ -50,6 +50,6 @@ public class Main {
         for (int numero : numeros) {
             System.out.println(numero);
         }
-        
+
     }
 }
