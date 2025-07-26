@@ -19,21 +19,37 @@ public class Main {
 //            System.out.println("Elemento: " + numero);
 //        }
 
-        // Declaração e inicialização do array de notas
-        double[] notas = {8.5, 7.0, 9.5, 6.0, 10.0};
+//        // Declaração e inicialização do array de notas
+//        double[] notas = {8.5, 7.0, 9.5, 6.0, 10.0};
+//
+//        // Calculando a soma das notas
+//        double soma = 0.0;
+//        for (double nota : notas) {
+//            soma += nota;
+//        }
+//
+//        // Calculando a média
+//        double media = soma / notas.length;
+//
+//        // Exibindo a média
+//        System.out.println("A média das notas é: " + media);
 
-        // Calculando a soma das notas
-        double soma = 0.0;
-        for (double nota : notas) {
-            soma += nota;
+        // Declaração e inicialização do array
+        int[] numeros = {1, 2, 3};
+
+        try {
+            // Tentando acessar um índice fora dos limites
+            System.out.println("Tentando acessar o índice 3: " + numeros[3]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            // Capturando a exceção
+            System.out.println("Erro: Índice fora dos limites do array.");
         }
 
-        // Calculando a média
-        double media = soma / notas.length;
-
-        // Exibindo a média
-        System.out.println("A média das notas é: " + media);
-
-
+        // Exibindo os elementos do array
+        System.out.println("Elementos do array:");
+        for (int numero : numeros) {
+            System.out.println(numero);
+        }
+        
     }
 }
